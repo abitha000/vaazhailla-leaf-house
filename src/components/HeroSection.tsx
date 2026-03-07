@@ -68,13 +68,12 @@ const HeroSection = () => {
           >
             Explore Our Menu
           </button>
-          <a
-            href="tel:9790018002"
+          <button
+            onClick={() => document.querySelector("#booking")?.scrollIntoView({ behavior: "smooth" })}
             className="flex items-center gap-2 border border-gold/40 text-gold hover:bg-gold/10 px-8 py-4 rounded-lg font-medium text-base transition-all duration-300"
           >
-            <Phone className="w-4 h-4" />
-            Order Now
-          </a>
+            Book Your Table
+          </button>
         </motion.div>
       </div>
 
