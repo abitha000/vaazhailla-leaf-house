@@ -26,16 +26,17 @@ const Navbar = () => {
   }, []);
 
   const scrollTo = (href: string) => {
-    const element = document.querySelector(href);
-
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-
     setIsOpen(false);
+    // Small delay to let mobile menu close before scrolling
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 300);
   };
 
   return (
