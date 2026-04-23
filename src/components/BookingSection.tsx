@@ -40,7 +40,7 @@ const BookingSection = () => {
 
     const text = `🍽️ *New Table Booking — Vaazhailla*%0A%0A👤 Name: ${encodeURIComponent(form.name)}%0A📞 Phone: ${encodeURIComponent(form.phone)}%0A📅 Date: ${encodeURIComponent(form.date)}%0A🕐 Time: ${encodeURIComponent(form.time)}%0A👥 Guests: ${encodeURIComponent(form.guests)}${form.message ? `%0A💬 Note: ${encodeURIComponent(form.message)}` : ""}`;
 
-    window.open(`https://wa.me/9916479979?text=${text}`, "_blank");
+    window.open(`https://wa.me/919916479979?text=${text}`, "_blank");
   };
 
   const inputClass = "w-full bg-muted/50 border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold/50 transition-all font-body text-sm";
